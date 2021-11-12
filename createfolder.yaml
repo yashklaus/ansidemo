@@ -3,8 +3,8 @@
     tasks:
       - name: Creates directory
         ansible.windows.win_file:
-          path:  C:\Users\yash\Desktop\New folder\test.txt
-          state: touch
+          path:  C:\Users\yash\Desktop\New folder1
+          state: directory
       
       
       
