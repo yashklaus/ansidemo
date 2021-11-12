@@ -4,4 +4,4 @@
      - name: Service restart
        win_service: 
          name: DusmSvc
-         state: started
+         state: stopped
