@@ -1,8 +1,7 @@
 ---
- - name: "Get ping response"
-   hosts: all
-   gather_facts: no
+ - hosts: all
    tasks:
-   - action: ping
-     register: hello
-   - debug: msg="{hello.stdout}"
+     - name: Service restart
+       win_service: 
+         name: DusmSvc
+         state: started
