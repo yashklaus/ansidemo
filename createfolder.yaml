@@ -3,8 +3,8 @@
     tasks:
       - name: Creates directory
         file:
-          path: /Users/yash/Desktop/New1
-          state: directory
+          path:  C:\Users\yash\Desktop\New folder\test.txt
+          state: touch
       
       
       
