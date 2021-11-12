@@ -1,0 +1,6 @@
+---
+  hosts: all
+  - name: Creates directory
+    file:
+      path: C:\Users\yash\Desktop\New1
+      state: directory
