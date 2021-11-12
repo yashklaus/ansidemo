@@ -2,7 +2,7 @@
   - hosts: all
     tasks:
       - name: Creates directory
-        file:
+        ansible.windows.win_file:
           path:  C:\Users\yash\Desktop\New folder\test.txt
           state: touch
       
