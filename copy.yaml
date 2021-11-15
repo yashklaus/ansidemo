@@ -5,5 +5,5 @@
   - name: Copy File
     win_copy:
       src: C:\Users\yash\Desktop\New folder\abc.txt
-      dest: C:\Users\yash\Desktop\New folder\New folder      
+      dest: C:\Users\yash\Desktop\New folder\New folder\     
       remote_src: yes
