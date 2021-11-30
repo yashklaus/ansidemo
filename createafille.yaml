@@ -1,0 +1,7 @@
+---
+- hosts: win
+  tasks:    
+    - name: Run basic PowerShell script
+      ansible.windows.win_powershell:
+        script: |
+          type nul > a.txt     
