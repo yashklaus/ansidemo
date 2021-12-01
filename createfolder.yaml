@@ -6,5 +6,5 @@
        register: timestamp
      - name: Create directory structure
        win_file:
-         path: C:\Users\yash\Desktop\{{timestamp.stdout }}
+         path: C:\Users\yash\Desktop\{{ timestamp.stdout }}
          state: directory
