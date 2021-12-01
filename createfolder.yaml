@@ -2,6 +2,6 @@
  - hosts: all
    tasks:
      - name: Create directory structure
-       ansible.windows.win_file:
-         path: C:\Users\yash\Desktop\New1
+       win_file:
+         path: C:\Users\yash\Desktop\New2
          state: directory
