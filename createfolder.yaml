@@ -2,7 +2,7 @@
  - hosts: all
    tasks:
      - name: Collect current  timestamp
-       shell: date +%d%b%y_%H-%M-%S
+       shell: "date +%Y-%m-%d%H-%M-%S"
        register: timestamp
      - name: Create directory structure
        win_file:
