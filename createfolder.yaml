@@ -6,5 +6,9 @@
        register: timestamp
      - name: Create directory structure
        win_file:
+         path: C:\Users\yash\Desktop\{{ansible_date_time.date}}
+         state: directory  
+     - name: Create directory structure
+       win_file:
          path: C:\Users\yash\Desktop\{{ timestamp.stdout }}
          state: directory
