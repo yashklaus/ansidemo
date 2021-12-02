@@ -1,7 +1,0 @@
----
- - hosts: all
-   tasks:
-     - name: Service restart
-       win_service: 
-         name: DusmSvc
-         state: stopped
