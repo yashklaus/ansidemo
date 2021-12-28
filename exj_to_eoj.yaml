@@ -1,0 +1,8 @@
+---
+ - hosts: all
+   tasks:
+     - name: Change exj to eoj
+       ansible.windows.win_powershell:
+         script: |
+            Get-ChildItem C:\Users\yaswa\Desktop\POST.01.exj | Rename-Item -NewName { $_.name -Replace '\.exj$','.eoj' }
+  
