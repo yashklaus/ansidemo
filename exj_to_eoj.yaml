@@ -1,5 +1,5 @@
 ---
- - hosts: all
+ - hosts: win
    tasks:
      - name: Change exj to eoj
        win_shell: Get-ChildItem C:\Users\yash\Desktop\POST.01.exj | Rename-Item -NewName { $_.name -Replace '\.exj$','.eoj' }
